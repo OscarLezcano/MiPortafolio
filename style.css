@@ -1,48 +1,129 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif; /* Establece la fuente de texto */
+    line-height: 1.6; /* Establece la altura de línea */
+    margin: 0; /* Coloca margen 0 */
+    padding: 0; /* Coloca padding 0 */
+    background-color: #f4f4f4; /* Establece el color de fondo */
+    color: #333; /* Establece el color de texto */
 }
+
 header {
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #2c3e50; 
-    color: #ffffff; 
+    background-color: #34495e; /* Establece el color de fondo */
+    color: #ffffff; /* Establece el color de texto */
+    padding: 20px 0; /* Establece el padding superior e inferior a 20px y el padding izquierdo y derecho a 0 */
+    text-align: center; /* Centra el contenido del encabezado */
 }
-h1 {
-    margin: 5px 0;
+
+header h1 {
+    margin: 0; /* Coloca margen 0 */
+    font-size: 2.5em; /* Establece el tamaño de fuente */
 }
-h2 {
-    margin: 0;
-    font-size: 1.2em; 
-    color: #ffffff; 
+
+header h2 {
+    margin: 0; /* Coloca margen 0 */
+    font-size: 1.3em; /* Establece el tamaño de fuente */
+    font-weight: 400; /* Establece el grosor de fuente */
 }
-section {
-    margin-bottom: 30px;
-    border: 1px solid #ddd; 
-    padding: 10px;
-    background-color: #ffffff; 
-    border-radius: 5px; 
+
+nav ul {
+    padding: 0; /* Coloca padding 0 */
+    list-style-type: none; /* Elimina los estilos de lista */
+    text-align: center; /* Centra el contenido de la lista */
+    background-color: #2c3e50; /* Establece el color de fondo */
+    margin: 0; /* Coloca margen 0 */
 }
-ul {
-    padding-left: 20px;
-}
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #2c3e50; 
-    color: #ffffff; 
-}
+
 nav ul a {
-        color: #fff; 
-        margin-right: 10px;
-        text-decoration: none; /* Elimina el subrayado */
+    display: inline-block; /* Muestra los elementos en línea */
+    padding: 10px 15px; /* Establece el padding superior e inferior a 10px y el padding izquierdo y derecho a 15px */
+    color: #fff; /* Establece el color de texto */
+    text-decoration: none; /* Elimina la decoración de texto */
+    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
 }
-/* Cambia el color del texto al pasar el mouse */
-nav ul a:hover {    
-        color: #ddd; 
-        text-decoration: underline; /* Subraya el texto */
+
+nav ul a:hover {
+    background-color: #3498db; /* Establece el color de fondo al pasar el cursor sobre el enlace */
+}
+
+section {
+    margin: 30px; /* Coloca margen de 30px */
+    padding: 20px; /* Coloca padding de 20px */
+    border: 1px solid #ccc; /* Establece un borde de 1px sólido con color #ccc */
+    border-radius: 4px; /* Establece el radio de borde de 4px */
+    background-color: #fff; /* Establece el color de fondo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra al elemento */
+}
+
+section h3 {
+    font-size: 1.7em; /* Establece el tamaño de fuente */
+    margin-bottom: 15px; /* Coloca margen inferior de 15px */
+}
+
+footer {
+    background-color: #34495e; /* Establece el color de fondo */
+    color: #fff; /* Establece el color de texto */
+    text-align: center; /* Centra el contenido del pie de página */
+    padding: 20px 0; /* Establece el padding superior e inferior a 20px y el padding izquierdo y derecho a 0 */
+    margin-top: 30px; /* Coloca margen superior de 30px */
+}
+
+footer a {
+    color: #fff; /* Establece el color de texto */
+    text-decoration: none; /* Elimina la decoración de texto */
+}
+
+footer a:hover {
+    color: #ddd; /* Establece el color de texto al pasar el cursor sobre el enlace */
+}
+
+footer img {
+    height: 20px; /* Establece la altura de la imagen */
+    width: 20px; /* Establece el ancho de la imagen */
+    margin-right: 5px; /* Coloca margen derecho de 5px */
+}
+
+footer form {
+    margin: 20px auto; /* Coloca margen superior e inferior de 20px y margen izquierdo y derecho automático */
+    width: 80%; /* Establece el ancho del formulario al 80% */
+}
+
+footer form input[type="text"],
+footer form input[type="email"],
+footer form textarea {
+    width: 100%; /* Establece el ancho al 100% */
+    padding: 12px 20px; /* Establece el padding superior e inferior a 12px y el padding izquierdo y derecho a 20px */
+    margin: 8px 0; /* Coloca margen superior e inferior de 8px y margen izquierdo y derecho de 0 */
+    display: inline-block; /* Muestra los elementos en línea */
+    border: 1px solid #ccc; /* Establece un borde de 1px sólido con color #ccc */
+    border-radius: 4px; /* Establece el radio de borde de 4px */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+footer form input[type="submit"] {
+    background-color: #e74c3c; /* Establece el color de fondo */
+    color: white; /* Establece el color de texto */
+    padding: 14px 20px; /* Establece el padding superior e inferior a 14px y el padding izquierdo y derecho a 20px */
+    margin: 8px 0; /* Coloca margen superior e inferior de 8px y margen izquierdo y derecho de 0 */
+    border: none; /* Elimina el borde */
+    border-radius: 4px; /* Establece el radio de borde de 4px */
+    cursor: pointer; /* Cambia el cursor al pasar el cursor sobre el botón */
+    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+}
+
+footer form input[type="submit"]:hover {
+    background-color: #c0392b; /* Establece el color de fondo al pasar el cursor sobre el botón */
+}
+
+footer ul {
+    list-style-type: none; /* Elimina los estilos de lista */
+    padding: 0; /* Coloca padding 0 */
+}
+
+footer ul li a {
+    color: #bdc3c7; /* Establece el color de texto */
+    text-decoration: none; /* Elimina la decoración de texto */
+}
+
+footer ul li a:hover {
+    color: #ecf0f1; /* Establece el color de texto al pasar el cursor sobre el enlace */
 }
